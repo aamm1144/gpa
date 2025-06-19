@@ -238,12 +238,12 @@ if __name__ == "__main__":
     WEBSITE_URL = "http://abr.su.edu.eg/"
     
     # بيانات تسجيل الدخول
-    USERNAME = "202301209"
-    PASSWORD = "m2qBkSVX"
+    USERNAME = os.getenv("USERNAME")
+    PASSWORD = os.getenv("PASSWORD")
     
     # إعدادات Telegram
-    BOT_TOKEN = "7680451124:AAFGU99rxasd99ZbyaRxkbbV85tg2yKfG6o"
-    CHAT_ID = "5824638955"
+    BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+    CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
     
     print(f"Username: {USERNAME}")
     print(f"Password: {PASSWORD}")
