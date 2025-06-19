@@ -23,4 +23,7 @@ jobs:
         pip install requests==2.31.0
     
     - name: Run GPA monitor
+      env:
+        TELEGRAM_BOT_TOKEN: "7680451124:AAFGU99rxasd99ZbyaRxkbbV85tg2yKfG6o"
+        TELEGRAM_CHAT_ID: "5824638955"
       run: python gpa.py
