@@ -365,3 +365,4 @@ if __name__ == "__main__":
     
     monitor = GPAMonitor(WEBSITE_URL, USERNAME, PASSWORD, BOT_TOKEN, CHAT_ID)
     monitor.check_gpa_change()
+
