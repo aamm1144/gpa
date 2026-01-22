@@ -2,10 +2,10 @@ name: GPA Monitor
 
 on:
   schedule:
-    - cron: '*/3 * * * *'  # كل 3 دقائق
+    - cron: '*/5 * * * *'  # كل 5 دقايق (الحد الأدنى المسموح)
   workflow_dispatch:        # تشغيل يدوي
   push:
-    branches: [ main ]      # عند أي Push على الفرع الرئيسي
+    branches: [ main ]
 
 jobs:
   monitor:
