@@ -11,7 +11,7 @@ class GPAMonitor:
         self.password = password
         self.bot_token = telegram_bot_token
         self.chat_id = telegram_chat_id
-        self.target_text = "3.33 / 4"
+        self.target_text = "3.27 / 4"
         self.session = requests.Session()
         self.dashboard_url = None
         self.login_success = False
@@ -365,4 +365,5 @@ if __name__ == "__main__":
     
     monitor = GPAMonitor(WEBSITE_URL, USERNAME, PASSWORD, BOT_TOKEN, CHAT_ID)
     monitor.check_gpa_change()
+
 
